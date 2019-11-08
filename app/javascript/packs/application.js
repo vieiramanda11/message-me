@@ -4,6 +4,8 @@
 // that code so it'll be compiled.
 
 //= require semantic-ui
+//= require semantic-ui/dropdown
+//= require jquery_ujs
 //= jquery
 
 require("@rails/ujs").start()
