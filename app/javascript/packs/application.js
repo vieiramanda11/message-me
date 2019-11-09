@@ -6,15 +6,24 @@
 //= require semantic-ui
 //= require semantic-ui/dropdown
 //= require jquery_ujs
-//= jquery
+//= require turbolinks
+//= require_tree .
+//= require jquery3
+//= require popper
+//= require rails-ujs
+
 
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("packs/src/example.js")
 
 $(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
+  $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
 })
 
 
