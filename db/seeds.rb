@@ -12,3 +12,10 @@ User.create(username: "Minerva", password: "password")
 User.create(username: "Ginny", password: "password")
 User.create(username: "Nymphadora", password: "password")
 
+Message.create(user_id: "1", body: "Wingardium Leviosa")
+Message.create(user_id: "2", body: "Lumus turn on, nox turn off")
+Message.create(user_id: "3", body: "Expelliarmus")
+Message.create(user_id: "4", body: "Finit incantatem")
+Message.create(user_id: "5", body: "Don't use Imperius curse")
+
+
