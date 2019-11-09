@@ -3,22 +3,19 @@
  // a relevant structure within app/javascript and only use these pack files to reference
  // that code so it'll be compiled.
 
-//= require semantic-ui
-//= require semantic-ui/dropdown
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
-//= require jquery3
-//= require popper
 //= require rails-ujs
+//= require jquery
+//= require activestorage
+//= require turbolinks
+//= require semantic-ui
+//= require_tree .
 
-require("jquery_ujs").start()
+require("jquery").start()
 require("semantic-ui").start()
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("packs/src/example.js")
 
 $(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
